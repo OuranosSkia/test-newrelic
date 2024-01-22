@@ -1,5 +1,7 @@
-import { Component, Prop, h } from '@stencil/core';
+import { MicroAgent } from "@newrelic/browser-agent/loaders/micro-agent";import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
+
+new MicroAgent({});
 
 @Component({
   tag: 'my-component',
